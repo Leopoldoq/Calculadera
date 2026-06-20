@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tabela Verdade</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Tabela Verdade</h1>
+        <p>
+            O que você pode usar:
+            <ul>
+                <li><code>AND</code> ou <code>^</code> (E)</li>
+                <li><code>OR</code> ou <code>v</code> (OU)</li>
+                <li><code>NOT</code> ou <code>~</code> (NÃO)</li>
+                <li><code>IMP</code> ou <code>-></code> (IMPLICA)</li>
+                <li><code>IFF</code> ou <code><-></code> (SE SOMENTE SE)</li>
+                <li>Variáveis (letras simples)</li>
+                <li>Parênteses para agrupar expressões </li>
+            </ul>
+        </p>
+        <div class="input-group">
+            <label for="expresaoInput">Digite a expresão lógica:</label>
+            <input type="text" id="expresaoInput" placeholder="Ex: (A AND B) OR NOT C">
+            <button onclick="criarTabelaVerdade()">Calcular</button>
+        </div>
+        <div id="resultwado" class="resultado-container"></div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
